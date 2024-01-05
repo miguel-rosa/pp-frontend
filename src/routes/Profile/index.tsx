@@ -15,6 +15,7 @@ import * as Theme from '@theme';
 ### Support view
 1. Use your preferred form library to implement a form that will call API's createSupportTicket.
 2. Display a success message after the form is submitted.
+Make sure to handle field validation.
 */
 
 const menuStyle = {
