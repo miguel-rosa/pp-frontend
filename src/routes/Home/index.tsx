@@ -1,31 +1,17 @@
 import React from 'react';
-import * as Theme from '@theme';
+import styles from './styles.module.scss';
 
 /* TODO:
-1. Center Card component within the #home.
-2. Display user's full name and their email. Use UserProvider's functionality (see providers.js)
-3. Display user's masked phone number, and implement a way to unmask it. Use UserProvider's context.
+1. Center h1 and p elements, both horizontally and vertically. Use provided "styles" object.
+2. Make the font sizes of both elements smaller on devices with screen width less than 768px.
 */
-
-const Card = () => {
-  return (
-    <div id="card">
-      ...
-    </div>
-  ); 
-}
-
-const homeStyle = {
-  backgroundColor: Theme.colors.beige,
-  width: '100vw',
-  height: '100vh',
-};
 
 const Home = () => {
   return (
-    <div id="home" style={homeStyle}>
-      <Card />
-    </div>
+    <section>
+      <h1>WellTheory</h1>
+      <p>Complete the TODOs placed throughout the codebase.</p>
+    </section>
   );
 }
 
