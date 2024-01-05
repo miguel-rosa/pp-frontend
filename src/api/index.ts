@@ -11,3 +11,8 @@ export const me = () => {
 export const phone = () => {
   // GET https://us-central1-internals-358114.cloudfunctions.net/react-challenge/phone
 };
+
+export const createSupportTicket = () => {
+  // POST https://us-central1-internals-358114.cloudfunctions.net/react-challenge/support-tickets
+  // body: { title: string; message: string }
+};
