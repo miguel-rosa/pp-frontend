@@ -2,12 +2,10 @@
 1. Install dependencies with `npm install`
 2. Start the server with `npm start`
 
-### Tasks
-Complete the "TODO"s in:
 
-1. `./src/api/index.ts`
-2. `./src/providers/index.tsx`
-3. `./src/routes/Home/index.tsx`
+### Tasks
+Complete the "TODO"s in the `./src/*` files. 
+
 
 ### Language preferences
 TypeScript is the preferred language for this challenge, but JavaScript will also be accepted.
@@ -15,6 +13,7 @@ TypeScript is the preferred language for this challenge, but JavaScript will als
 
 ### Additional guidelines
 1. While this is a code challenge, approach it as you would a production task. Consider all aspects such as code quality, performance, UX, and maintainability.
+
 
 ### Submission Instructions
 1. **Clone the Repository**: Clone this repository to your local machine.
