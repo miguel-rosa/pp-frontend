@@ -32,5 +32,5 @@ export const createSupportTicket = async (
       title, message
     })
   } )
-  return response.json()
+  return response
 };

@@ -12,7 +12,7 @@ const Routes = () => useRoutes([
     element: <Profile />,
     children: [
       {
-        path: '/profile',
+        path: '/profile/',
         element: <BaseView/>
       },
       {
