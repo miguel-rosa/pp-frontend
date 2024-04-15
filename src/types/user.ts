@@ -13,6 +13,7 @@ export type User = {
     last_name: string
     address: Address
     masked_phone: string
+    phone: string
     shipping: {
         name:string
         address: Address
