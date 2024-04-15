@@ -8,7 +8,7 @@ import styles from './styles.module.scss';
 
 const Home = () => {
   return (
-    <section>
+    <section className={styles.container}>
       <h1>WellTheory</h1>
       <p>Complete the TODOs placed throughout the codebase.</p>
     </section>
