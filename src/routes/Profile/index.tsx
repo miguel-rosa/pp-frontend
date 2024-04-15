@@ -4,7 +4,7 @@ import * as Theme from '@theme';
 import * as API from '@api';
 import { useUser } from '@providers';
 import { SubmitHandler, useForm } from 'react-hook-form';
-
+import styles from './styles.module.scss'
 
 /* TODO:
 ### Layout
@@ -90,10 +90,12 @@ export const SupportView = () => {
   }
 
   return (
-    <div id="support-view">
+    <div id="support-view" className={styles.support}>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <input required {...register('title')}/>
-        <input required  {...register('message')}/>
+        <label>Title</label>
+        <input required {...register('title')} placeholder='title of your ticket'/>
+        <label>Message</label>
+        <input required  {...register('message')} placeholder='message of your ticket'/>
         <input type="submit"/>
       </form>
     </div>
