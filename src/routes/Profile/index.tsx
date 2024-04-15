@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import * as Theme from '@theme';
 
 /* TODO:
@@ -23,6 +23,7 @@ const menuStyle = {
   'flex-direction': 'column',
   height: '100vh',
   'overflow-y': 'scroll',
+  padding: '15px'
 };
 
 const Menu = () => {
@@ -34,18 +35,18 @@ const Menu = () => {
   );
 };
 
-const BaseView = () => {
+export const BaseView = () => {
   return (
     <div id="base-view">
-      TODO:
+      TODO Base:
     </div>
   ); 
 };
 
-const SupportView = () => {
+export const SupportView = () => {
   return (
     <div id="support-view">
-      TODO:
+      TODO support:
     </div>
   );
 };
@@ -54,6 +55,7 @@ const profileStyle = {
   backgroundColor: Theme.colors.beige,
   width: '100vw',
   height: '100vh',
+  display: 'flex'
 };
 
 const Profile = () => {
@@ -61,7 +63,7 @@ const Profile = () => {
     <div id="profile" style={profileStyle}>
       <Menu />
       <div id="views">
-        TODO:
+        <Outlet />
       </div>
     </div>
   );
