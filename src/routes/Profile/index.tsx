@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import * as Theme from '@theme';
+import { useUser } from '@providers';
 
 /* TODO:
 ### Layout
@@ -36,9 +37,21 @@ const Menu = () => {
 };
 
 export const BaseView = () => {
+  const {state:{user}, dispatch:{ unmaskPhone}} = useUser()
+
   return (
     <div id="base-view">
-      TODO Base:
+      <div>
+        <div>
+          <h1>{user.first_name} {user.last_name}</h1>
+          <h2>{user.email}</h2>
+          <p>{user.phone || user.masked_phone}</p>
+          <button onClick={unmaskPhone}>See phone</button>
+        </div>
+        <div>
+          <h3>{user.address.line1}, {user.address.city}, {user.address.state} {user.address.country} {user.address.postal_code}</h3>
+        </div>
+      </div>
     </div>
   ); 
 };
